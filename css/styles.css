@@ -536,3 +536,8 @@ textarea {
 .accent {
     transition: color .18s ease
 }
+/* Footer links */
+.footer-links{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.footer-links a{display:inline-flex;align-items:center;gap:0.4rem;color:var(--muted);text-decoration:none;transition:color .2s ease,transform .2s ease}
+.footer-links a:hover{color:var(--accent);transform:translateY(-2px)}
+.footer-links svg{width:20px;height:20px}

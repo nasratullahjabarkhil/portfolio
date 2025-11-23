@@ -57,11 +57,28 @@
       }
     });
   }
+  // CV dinámico según idioma
+  const cvLink = document.getElementById('cv-link');
+  function updateCVLink(){
+    if(currentLang === 'es'){
+      cvLink.href = 'assets/CV_Nasratullah_Jabarkhil_ES.pdf';
+      cvLink.download = 'CV_Nasratullah_Jabarkhil_ES.pdf';
+    } else {
+      cvLink.href = 'assets/CV_Nasratullah_Jabarkhil_EN.pdf';
+      cvLink.download = 'CV_Nasratullah_Jabarkhil_EN.pdf';
+    }
+  }
+  
   // Inicializar idioma guardado
   setLanguage(currentLang);
+  updateCVLink();
+  
   // Event listeners para cambiar idioma
   langButtons.forEach(btn=>{
-    btn.addEventListener('click', ()=> setLanguage(btn.dataset.lang));
+    btn.addEventListener('click', ()=> {
+      setLanguage(btn.dataset.lang);
+      updateCVLink();
+    });
   });
 
   // Tema (dark / light)
