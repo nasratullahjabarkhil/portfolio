@@ -542,3 +542,7 @@ textarea {
 .footer-links a{display:inline-flex;align-items:center;gap:0.5rem;color:var(--muted);text-decoration:none;transition:color .2s ease,transform .2s ease;padding:0.5rem 1rem;border-radius:8px;background:var(--glass)}
 .footer-links a:hover{color:var(--accent);transform:translateY(-2px);background:rgba(125,211,252,0.1)}
 .footer-links svg{width:20px;height:20px;flex-shrink:0}
+
+/* Iconos de habilidades */
+.skill-icon{display:inline-block;margin-right:0.5rem;font-size:1.1rem;filter:grayscale(0.3);transition:filter .2s ease,transform .2s ease}
+.skills-list li:hover .skill-icon{filter:grayscale(0);transform:scale(1.2)}
