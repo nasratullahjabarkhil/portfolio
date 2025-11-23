@@ -60,14 +60,29 @@
   // CV dinámico según idioma
   const cvLink = document.getElementById('cv-link');
   function updateCVLink(){
-    if(currentLang === 'es'){
-      cvLink.href = 'assets/CV_Nasratullah_Jabarkhil_ES.pdf';
-      cvLink.download = 'CV_Nasratullah_Jabarkhil_ES.pdf';
-    } else {
-      cvLink.href = 'assets/CV_Nasratullah_Jabarkhil_EN.pdf';
-      cvLink.download = 'CV_Nasratullah_Jabarkhil_EN.pdf';
-    }
+    const filename = currentLang === 'es' 
+      ? 'CV_Nasratullah_Jabarkhil_ES.pdf' 
+      : 'CV_Nasratullah_Jabarkhil_EN.pdf';
+    cvLink.href = 'assets/' + filename;
+    cvLink.download = filename;
+    cvLink.setAttribute('type', 'application/pdf');
+    cvLink.setAttribute('target', '_blank');
   }
+  
+  // Forzar descarga en Chrome con click handler
+  cvLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    const filename = currentLang === 'es' 
+      ? 'CV_Nasratullah_Jabarkhil_ES.pdf' 
+      : 'CV_Nasratullah_Jabarkhil_EN.pdf';
+    const link = document.createElement('a');
+    link.href = 'assets/' + filename;
+    link.download = filename;
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
   
   // Inicializar idioma guardado
   setLanguage(currentLang);
