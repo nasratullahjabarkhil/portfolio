@@ -360,12 +360,15 @@ textarea {
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 1.5rem
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column
     }
 
     .hero-art {
         display: flex;
-        justify-content: center
+        justify-content: center;
+        order: -1
     }
 
     .hero-art img {
