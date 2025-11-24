@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#164e63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect fill="url(#grad5)" width="400" height="250"/>
+  
+  <!-- Computer monitor -->
+  <rect x="100" y="40" width="200" height="140" rx="5" fill="#1e293b" stroke="#7dd3fc" stroke-width="2"/>
+  <rect x="110" y="50" width="180" height="110" rx="3" fill="#0f1724"/>
+  
+  <!-- UI Elements on screen -->
+  <!-- Window 1 -->
+  <rect x="120" y="60" width="70" height="40" rx="2" fill="#7dd3fc" opacity="0.3"/>
+  <rect x="120" y="60" width="70" height="8" rx="2" fill="#7dd3fc"/>
+  <circle cx="125" cy="64" r="2" fill="#0f1724"/>
+  <circle cx="131" cy="64" r="2" fill="#0f1724"/>
+  
+  <!-- Window 2 -->
+  <rect x="200" y="60" width="80" height="50" rx="2" fill="#7dd3fc" opacity="0.3"/>
+  <rect x="200" y="60" width="80" height="8" rx="2" fill="#7dd3fc"/>
+  <circle cx="205" cy="64" r="2" fill="#0f1724"/>
+  <circle cx="211" cy="64" r="2" fill="#0f1724"/>
+  
+  <!-- Window 3 -->
+  <rect x="120" y="110" width="160" height="40" rx="2" fill="#7dd3fc" opacity="0.3"/>
+  <rect x="120" y="110" width="160" height="8" rx="2" fill="#7dd3fc"/>
+  <circle cx="125" cy="114" r="2" fill="#0f1724"/>
+  <circle cx="131" cy="114" r="2" fill="#0f1724"/>
+  
+  <!-- Monitor stand -->
+  <rect x="180" y="180" width="40" height="5" rx="2" fill="#1e293b"/>
+  <rect x="160" y="185" width="80" height="3" rx="1" fill="#1e293b"/>
+  
+  <!-- Cursor -->
+  <path d="M 250 120 L 250 135 L 255 130 Z" fill="#7dd3fc"/>
+  
+  <text x="200" y="220" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">Sense UI</text>
+</svg>

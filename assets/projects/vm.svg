@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c2d12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect fill="url(#grad3)" width="400" height="250"/>
+  
+  <!-- Stack representation -->
+  <rect x="150" y="150" width="100" height="20" rx="2" fill="#1e293b" stroke="#7dd3fc" stroke-width="2"/>
+  <rect x="150" y="125" width="100" height="20" rx="2" fill="#1e293b" stroke="#7dd3fc" stroke-width="2"/>
+  <rect x="150" y="100" width="100" height="20" rx="2" fill="#1e293b" stroke="#7dd3fc" stroke-width="2"/>
+  <rect x="150" y="75" width="100" height="20" rx="2" fill="#1e293b" stroke="#7dd3fc" stroke-width="2"/>
+  <rect x="150" y="50" width="100" height="20" rx="2" fill="#7dd3fc" stroke="#7dd3fc" stroke-width="2"/>
+  
+  <!-- Stack values -->
+  <text x="200" y="64" font-family="monospace" font-size="12" fill="#0f1724" text-anchor="middle" font-weight="bold">PUSH</text>
+  <text x="200" y="89" font-family="monospace" font-size="12" fill="#7dd3fc" text-anchor="middle">42</text>
+  <text x="200" y="114" font-family="monospace" font-size="12" fill="#7dd3fc" text-anchor="middle">17</text>
+  <text x="200" y="139" font-family="monospace" font-size="12" fill="#7dd3fc" text-anchor="middle">99</text>
+  <text x="200" y="164" font-family="monospace" font-size="12" fill="#7dd3fc" text-anchor="middle">03</text>
+  
+  <!-- Arrow pointing to top -->
+  <path d="M 130 60 L 140 60 L 135 52 Z" fill="#7dd3fc"/>
+  <text x="110" y="65" font-family="monospace" font-size="10" fill="#ffffff">TOP</text>
+  
+  <!-- VM gear icon -->
+  <text x="70" y="120" font-family="Arial" font-size="40" fill="#7dd3fc" opacity="0.3">⚙️</text>
+  <text x="310" y="120" font-family="Arial" font-size="40" fill="#7dd3fc" opacity="0.3">⚙️</text>
+  
+  <text x="200" y="210" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">Stack-Based VM</text>
+</svg>
