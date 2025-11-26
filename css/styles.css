@@ -263,21 +263,141 @@ body {
     margin-top: 1rem
 }
 
+/* === BOTONES === */
+
+/* Estilos base para todos los botones */
 .btn {
     display: inline-block;
     padding: 0.55rem 1rem;
-    background: linear-gradient(90deg, var(--accent), #60a5fa);
-    color: #032;
     border-radius: 8px;
     text-decoration: none;
     border: 0;
-    font-weight: 600
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-align: center
 }
 
-.btn.ghost {
+/* Botón primario - Ver proyectos */
+.btn-primary {
+    background: linear-gradient(90deg, var(--accent), #60a5fa);
+    color: #032;
+    box-shadow: 0 4px 12px rgba(125, 211, 252, 0.3)
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(125, 211, 252, 0.5)
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(125, 211, 252, 0.3)
+}
+
+/* Botón secundario - Contactar */
+.btn-secondary {
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    color: var(--text)
+    border: 2px solid rgba(125, 211, 252, 0.3);
+    color: var(--text);
+    box-shadow: 0 2px 8px rgba(125, 211, 252, 0.1)
+}
+
+.btn-secondary:hover {
+    background: rgba(125, 211, 252, 0.1);
+    border-color: rgba(125, 211, 252, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(125, 211, 252, 0.2)
+}
+
+.btn-secondary:active {
+    transform: translateY(0);
+    background: rgba(125, 211, 252, 0.05)
+}
+
+/* Botón de enviar formulario */
+.btn-submit {
+    background: linear-gradient(90deg, #10b981, #059669);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3)
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.5);
+    background: linear-gradient(90deg, #059669, #047857)
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3)
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none
+}
+
+/* Botón de limpiar formulario */
+.btn-reset {
+    background: transparent;
+    border: 2px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.1)
+}
+
+.btn-reset:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2)
+}
+
+.btn-reset:active {
+    transform: translateY(0);
+    background: rgba(239, 68, 68, 0.05)
+}
+
+/* Tema claro - ajustes de botones */
+:root.light .btn-primary {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3)
+}
+
+:root.light .btn-primary:hover {
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5)
+}
+
+:root.light .btn-secondary {
+    border-color: rgba(37, 99, 235, 0.4);
+    color: #1d4ed8
+}
+
+:root.light .btn-secondary:hover {
+    background: rgba(37, 99, 235, 0.1);
+    border-color: rgba(37, 99, 235, 0.6)
+}
+
+:root.light .btn-submit {
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4)
+}
+
+:root.light .btn-submit:hover {
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.6)
+}
+
+:root.light .btn-reset {
+    border-color: rgba(239, 68, 68, 0.4);
+    color: #dc2626
+}
+
+:root.light .btn-reset:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.6)
 }
 
 .hero-art img {
@@ -707,7 +827,21 @@ textarea {
     }
 
     .nav-toggle {
-        display: block
+        display: block;
+        order: -1
+    }
+    
+    .logo {
+        order: 0
+    }
+    
+    .nav-links {
+        order: 1
+    }
+    
+    .controls {
+        order: 2;
+        margin-left: auto
     }
 
     .nav-links {
